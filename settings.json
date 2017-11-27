@@ -1,0 +1,53 @@
+{
+  "workbench.colorTheme": "Dark-Dracula",
+
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+
+  "workbench.panel.location": "bottom",
+
+  // Use system clipboard
+  "vim.useSystemClipboard": true,
+
+
+  // Different status bar colors depending on mode
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors" : {
+      "normal": "#005f5f",
+      "insert": "#5f0000",
+      "visual": "#5f00af",
+      "visualline": "#005f87",
+      "visualblock": "#86592d",
+      "replace": "#000000"
+  },
+
+  // Leader is ","
+  "vim.leader": ",",
+
+  // Escape with jk
+  "vim.insertModeKeyBindings": [
+    { 
+      "before": [ "j", "k" ],
+      "after": [ "<Esc>" ]
+    },
+
+    // Save with <C-s>
+    {
+      "before": ["<C-s>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+     }
+
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  }
+}
